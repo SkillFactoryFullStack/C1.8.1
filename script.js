@@ -33,18 +33,12 @@ jQuery.prototype.class = function(name) {
 	return this;
 }
 
-
-// Задание 1
-// Написать метод jQuery.prototype.html(), который возвращает 
-// или изменяет html-содержимое выбранных элементов.
-
 jQuery.prototype.html = function(newHtml){
-	// Если в функцию ничего не передается, возвращаем
-	// html-содержимое, иначе изменяем его.
 	if (newHtml)
 			this.each(element => element.innerHTML = newHtml);
 	return this;
 }
 
 const $ = (e) => new jQuery(e);
+$('button').hide().show().click(e => console.log(e)).class('name')
 $('h1').html("Привет");
