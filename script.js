@@ -41,7 +41,7 @@ jQuery.prototype.html = function(newHtml){
 	// If nothing is passed to the function, return
 	// html content, otherwise change it.
 	if (newHtml)
-			this.each(element => element.innerHTML = newHtml);
+		this.each(element => element.innerHTML = newHtml);
 	return this;
 }
 
