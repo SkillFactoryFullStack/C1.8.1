@@ -33,7 +33,13 @@ jQuery.prototype.class = function(name) {
 	return this;
 }
 
+// Exercise 1
+// Write a jQuery.prototype.html () method that returns
+// or change the html content of the selected elements
+
 jQuery.prototype.html = function(newHtml){
+	// If nothing is passed to the function, return
+	// html content, otherwise change it.
 	if (newHtml)
 			this.each(element => element.innerHTML = newHtml);
 	return this;
